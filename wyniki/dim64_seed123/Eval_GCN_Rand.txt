@@ -1,0 +1,137 @@
+C:\Users\Przemek\PycharmProjects\PythonProject1\.venv\Scripts\python.exe C:\Users\Przemek\PycharmProjects\PythonProject1\Train_and_eval.py 
+Starting training GCN
+Epoch 020, Loss: 1.4067, Train: 0.6786, Val: 0.2280, Test: 0.3000
+Epoch 040, Loss: 0.8464, Train: 0.8857, Val: 0.2720, Test: 0.3360
+Epoch 060, Loss: 0.4828, Train: 0.9786, Val: 0.2820, Test: 0.3500
+Epoch 080, Loss: 0.4018, Train: 0.9929, Val: 0.3060, Test: 0.3590
+Epoch 100, Loss: 0.2750, Train: 0.9929, Val: 0.3000, Test: 0.3600
+Epoch 120, Loss: 0.3333, Train: 1.0000, Val: 0.3140, Test: 0.3570
+Epoch 140, Loss: 0.2405, Train: 1.0000, Val: 0.3260, Test: 0.3640
+Epoch 160, Loss: 0.1771, Train: 1.0000, Val: 0.3160, Test: 0.3610
+Epoch 180, Loss: 0.1726, Train: 1.0000, Val: 0.3360, Test: 0.3640
+Epoch 200, Loss: 0.2089, Train: 1.0000, Val: 0.3320, Test: 0.3590
+
+Training completed!
+
+================================================================================
+FINAL COMPREHENSIVE ANALYSIS
+================================================================================
+============================================================
+CLASS DISTRIBUTION ANALYSIS
+============================================================
+                 Class  Train  Val  Test  Total  Train %  Val %  Test %  Total %
+            Case_Based     20   61   130    211    14.29   12.2    13.0    12.87
+    Genetic_Algorithms     20   36    91    147    14.29    7.2     9.1     8.96
+       Neural_Networks     20   78   144    242    14.29   15.6    14.4    14.76
+ Probabilistic_Methods     20  158   319    497    14.29   31.6    31.9    30.30
+Reinforcement_Learning     20   81   149    250    14.29   16.2    14.9    15.24
+         Rule_Learning     20   57   103    180    14.29   11.4    10.3    10.98
+                Theory     20   29    64    113    14.29    5.8     6.4     6.89
+
+============================================================
+TEST SET DETAILED ANALYSIS
+============================================================
+Overall Accuracy: 0.3590 (35.90%)
+Random Uniform Baseline: 0.1429 (14.29%)
+Random Stratified Baseline: 0.1429 (14.29%)
+Improvement over Uniform Random: 151.3%
+Improvement over Stratified Random: 151.3%
+
+PER-CLASS PERFORMANCE:
+--------------------------------------------------------------------------------
+Class                Count    Correct  Accuracy   Precision  Recall   F1-Score
+--------------------------------------------------------------------------------
+Case_Based           130      43       0.3308     0.3583     0.3308   0.3440  
+Genetic_Algorithms   91       51       0.5604     0.3110     0.5604   0.4000  
+Neural_Networks      144      53       0.3681     0.4240     0.3681   0.3941  
+Probabilistic_Methods 319      107      0.3354     0.5459     0.3354   0.4155  
+Reinforcement_Learning 149      37       0.2483     0.2824     0.2483   0.2643  
+Rule_Learning        103      31       0.3010     0.2541     0.3010   0.2756  
+Theory               64       37       0.5781     0.2606     0.5781   0.3592  
+--------------------------------------------------------------------------------
+AVERAGE              -        -        0.3889     0.3480     0.3889   0.3504  
+STD DEV              -        -        0.1192     0.0980     0.1192   0.0557  
+
+============================================================
+VALIDATION SET DETAILED ANALYSIS
+============================================================
+Overall Accuracy: 0.3320 (33.20%)
+Random Uniform Baseline: 0.1429 (14.29%)
+Random Stratified Baseline: 0.1429 (14.29%)
+Improvement over Uniform Random: 132.4%
+Improvement over Stratified Random: 132.4%
+
+PER-CLASS PERFORMANCE:
+--------------------------------------------------------------------------------
+Class                Count    Correct  Accuracy   Precision  Recall   F1-Score
+--------------------------------------------------------------------------------
+Case_Based           61       18       0.2951     0.3214     0.2951   0.3077  
+Genetic_Algorithms   36       22       0.6111     0.3235     0.6111   0.4231  
+Neural_Networks      78       24       0.3077     0.3158     0.3077   0.3117  
+Probabilistic_Methods 158      42       0.2658     0.4773     0.2658   0.3415  
+Reinforcement_Learning 81       24       0.2963     0.3692     0.2963   0.3288  
+Rule_Learning        57       25       0.4386     0.3012     0.4386   0.3571  
+Theory               29       11       0.3793     0.1719     0.3793   0.2366  
+--------------------------------------------------------------------------------
+AVERAGE              -        -        0.3706     0.3258     0.3706   0.3295  
+STD DEV              -        -        0.1126     0.0839     0.1126   0.0522  
+
+============================================================
+TRAINING SET DETAILED ANALYSIS
+============================================================
+Overall Accuracy: 1.0000 (100.00%)
+Random Uniform Baseline: 0.1429 (14.29%)
+Random Stratified Baseline: 0.1429 (14.29%)
+Improvement over Uniform Random: 600.0%
+Improvement over Stratified Random: 600.0%
+
+PER-CLASS PERFORMANCE:
+--------------------------------------------------------------------------------
+Class                Count    Correct  Accuracy   Precision  Recall   F1-Score
+--------------------------------------------------------------------------------
+Case_Based           20       20       1.0000     1.0000     1.0000   1.0000  
+Genetic_Algorithms   20       20       1.0000     1.0000     1.0000   1.0000  
+Neural_Networks      20       20       1.0000     1.0000     1.0000   1.0000  
+Probabilistic_Methods 20       20       1.0000     1.0000     1.0000   1.0000  
+Reinforcement_Learning 20       20       1.0000     1.0000     1.0000   1.0000  
+Rule_Learning        20       20       1.0000     1.0000     1.0000   1.0000  
+Theory               20       20       1.0000     1.0000     1.0000   1.0000  
+--------------------------------------------------------------------------------
+AVERAGE              -        -        1.0000     1.0000     1.0000   1.0000  
+STD DEV              -        -        0.0000     0.0000     0.0000   0.0000  
+
+============================================================
+PREDICTION CONFIDENCE ANALYSIS - TEST
+============================================================
+Confidence Statistics:
+  Mean: 0.7288
+  Std:  0.2144
+  Min:  0.2363
+  Max:  1.0000
+  Median: 0.7514
+
+Confidence Distribution:
+  Low confidence (<0.5):   193 (19.3%)
+  Med confidence (0.5-0.8):  363 (36.3%)
+  High confidence (>0.8):  444 (44.4%)
+
+============================================================
+PREDICTION CONFIDENCE ANALYSIS - VALIDATION
+============================================================
+Confidence Statistics:
+  Mean: 0.7152
+  Std:  0.2223
+  Min:  0.2305
+  Max:  1.0000
+  Median: 0.7392
+
+Confidence Distribution:
+  Low confidence (<0.5):   112 (22.4%)
+  Med confidence (0.5-0.8):  186 (37.2%)
+  High confidence (>0.8):  202 (40.4%)
+
+Generating visualizations...
+
+Analysis complete!
+
+Process finished with exit code 0

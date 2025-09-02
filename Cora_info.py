@@ -1,0 +1,5 @@
+
+# Class names for Cora dataset
+class_names = ['Case_Based', 'Genetic_Algorithms', 'Neural_Networks',
+               'Probabilistic_Methods', 'Reinforcement_Learning',
+               'Rule_Learning', 'Theory']
